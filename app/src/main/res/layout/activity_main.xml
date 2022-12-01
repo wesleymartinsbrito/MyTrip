@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editDistance"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_et"
+            android:gravity="center"
+            android:hint="@string/distancia"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="Total de Quilômetros"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_et"
+            android:gravity="center"
+            android:hint="@string/preco"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="Preço por litro (L)"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/editAutonomy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_et"
+            android:gravity="center"
+            android:hint="@string/autonomia"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="Quilômetros por Litro (L)"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="Seu gasto total será de:"
+            android:textAllCaps="true"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="R$ 0,00"
+            android:textAllCaps="true"
+            android:textColor="#fd6a6a"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="20dp"
+            android:text="@string/calcular"
+            android:textAllCaps="true"
+            android:textColor="@color/button"
+            android:textSize="20dp" />
+    </LinearLayout>
+</ScrollView>
